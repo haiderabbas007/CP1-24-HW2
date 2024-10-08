@@ -32,7 +32,7 @@ for n in range(1, N):
     
     #Use timeit to time the matrix multiplication
     t_n_rows = timeit.timeit(lambda: axis_summation(E,1), number=500) / 500  # Averaging over 500 runs
-    t_n_columns = timeit.timeit(lambda: axis_summation(E,0), number = 50) / 50 
+    t_n_columns = timeit.timeit(lambda: axis_summation(E,0), number = 50) / 50 # Averaging over 50 runs
  
     #Append the calculation time to the list
     t_N_rows.append(t_n_rows)
